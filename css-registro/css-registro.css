@@ -1,0 +1,73 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+body{
+
+    
+    background: white;
+}
+    
+/*meu navbar
+#nav{
+        width:100%;
+        padding: 0;
+        background-color:white;
+        color: black;
+        font-family: "Montserrat", "sans-serif";
+}
+*/
+
+.active-nav * {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: yellow;
+}
+
+.navbar-light a {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.efeito{
+    border:none;
+    color:#000000;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.efeito-1:hover{
+    background: #00579F;
+    box-shadow: inset 0 0 0 3px #000000;
+}
+
+.efeito-2:hover{
+    background: #00579F;
+    box-shadow: inset 0 0 0 3px #ffffff;
+}
+
+#faixa{
+    
+    background: url("../img/azul.jpg");
+    background-size: cover;
+    max-height: 30px;    
+    padding-bottom: 50px;
+    background-attachment:inherit;
+    font-weight: bolder;
+    
+}
+
+
+#form{
+    
+    margin-top:100px;
+    margin-left: 300px;
+    margin-bottom: 150px;
+    font-family: "Montserrat"
+}
+
+#rodape{
+
+    width: 100%;
+    background-color: black;
+}
