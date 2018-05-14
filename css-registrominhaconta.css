@@ -5,6 +5,11 @@
 body{
     background: white;
 }
+
+.image-upload > input
+{
+    display: none;
+}
     
 /*meu navbar
 #nav{
@@ -50,7 +55,7 @@ body{
     background: url("../img/azul.jpg");
     background-size: cover;
     max-height: 30px;    
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     background-attachment:inherit;
     font-weight: bolder;
     
