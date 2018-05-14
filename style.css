@@ -162,3 +162,29 @@ fieldset.borda {
     -webkit-box-shadow:  0px 0px 0px 0px #000;
             box-shadow:  0px 0px 0px 0px #000;
 }
+
+#faixa{
+    
+    background: url("../img/azul.jpg");
+    background-size: cover;
+    max-height: 30px;    
+    padding-bottom: 50px;
+    background-attachment:inherit;
+    font-weight: bolder;
+    
+}
+
+
+#form{
+    
+    margin-top:100px;
+    margin-left: 300px;
+    margin-bottom: 150px;
+    font-family: "Montserrat"
+}
+
+#rodape{
+
+    width: 100%;
+    background-color: black;
+}
