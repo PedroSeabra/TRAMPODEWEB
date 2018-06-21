@@ -58,20 +58,6 @@
     line-height: 40px;
 }
 
-#principal
-{
-    border-style: dashed;
-    height: 300px;
-    margin: auto;
-}
-
-#secundario
-{
-    border-style: dotted;
-    height: 200px;
-    margin: auto;
-}
-
 body {
    background: white;
 }
