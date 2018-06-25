@@ -9,7 +9,7 @@
         //conecting:
         $db = mysqli_connect("127.0.0.1", "root", "12345", "bd_ufsbola");
         
-        if(isset($_POST['botao_reg'])){
+        if(isset($_POST['criar'])){
             
             //session_start();
             $nome = mysqli_real_escape_string($db, $_POST['nomeLiga']);
@@ -20,7 +20,7 @@
             $pontuacao15 = mysqli_real_escape_string($db, $_POST['pontuacao3']);
             $pontuacao5 = mysqli_real_escape_string($db, $_POST['pontuacao4']);
         
-            $sql = "INSERT INTO tb_usuarios(nome_usuarios, email_usuarios, apelido_usuarios, senha_usuarios, cpf_usuarios) VALUES('$nome', '$email', '$username', '$senha1', '$cpf')";
+            $sql = "INSERT INTO tb_ligas(nome_usuarios, nome_ligas, maxparticipantes_ligas, descricao_ligas, pontosplacarexato_ligas, pontosvencedor_ligas, pontosplacarnaoexato_ligas, pontosgol_ligas) VALUES('$nome', '$npartici', '$descri', '$pontuacao30', '$pontuacao20', '$pontuacao15', '$pontuacao5')";
             $_SESSION['message'] = "Cadastro de liga realizado com sucesso";
             
         }
