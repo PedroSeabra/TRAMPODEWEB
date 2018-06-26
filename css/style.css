@@ -1,0 +1,144 @@
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+.topo
+{
+    position: relative;
+    top: 55px;
+    left: 0;
+}
+
+.topo h1
+{
+    font-size: 60px;
+    color: white;
+}
+
+#destaque
+{
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+#panel
+{
+    height: 300px;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #00579F;
+}
+
+#panel2
+{
+    background-color: black;
+    border-style: solid;
+    border-radius: 8px;
+    height: 150px;
+    margin: auto;
+    float: right;
+}
+
+#jogos
+{
+    position: absolute;
+    top: 1200px;
+    left: 100px;
+}
+
+.textoPlacar    
+{
+    display: block;
+    margin-left: 80px;
+    font-weight: 1000;
+}
+
+.displayUserName
+{
+    color: red;
+}
+
+#ultimos_jogos
+{
+    position: relative;
+    left: -10px;
+    top: 10px;
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+body {
+   background: white;
+}
+
+.active-nav * {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: yellow;
+}
+
+.navbar-light a {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.efeito{
+    border:none;
+    color:#000000;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.efeito-1:hover{
+    background: #00579F;
+    box-shadow: inset 0 0 0 3px #000000;
+}
+
+.efeito-2:hover{
+    background: #00579F;
+    box-shadow: inset 0 0 0 3px #ffffff;
+}
+
+fieldset.borda {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+#faixa{
+    
+    background: url("../img/azul.jpg");
+    background-size: cover;
+    max-height: 30px;    
+    padding-bottom: 50px;
+    background-attachment:inherit;
+    font-weight: bolder;
+    
+}
+
+
+#form{
+    
+    margin-top:100px;
+    margin-left: 300px;
+    margin-bottom: 150px;
+    font-family: "Montserrat"
+}
+
+#rodape{
+
+    width: 100%;
+    background-color: black;
+}
+
+.fundoazul {
+    background: url(".../img/fundoazul.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
