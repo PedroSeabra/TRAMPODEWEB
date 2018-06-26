@@ -38,9 +38,11 @@ create table tb_ligas(
 
 create table tb_equipes(
 	id_equipes int NOT NULL AUTO_INCREMENT,
-    nome_equipes varchar(30) NOT NULL,
-    grupos_equipes enum('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H') NOT NULL,
-    PRIMARY KEY (id_equipes)
+    	nome_equipes varchar(30) NOT NULL,
+    	grupos_equipes enum('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H') NOT NULL,
+	pos_equipes int NOT NULL,
+	
+	PRIMARY KEY (id_equipes)
 )default charset = utf8, ENGINE = innodb;
 
 #describe equipes;
@@ -84,39 +86,39 @@ create table tb_palmites(
 
 #CADASTRANDO EQUIPES DA COPA
 insert into tb_equipes
-(nome_equipes, grupos_equipes)
+(nome_equipes, grupos_equipes, pos_equipes)
 values
-('Russia', 'A'),
-('Uruguai', 'A'),
-('Egito', 'A'),
-('Arábia Saudita', 'A'),
-('Espanha', 'B'),
-('Portugal', 'B'),
-('Irã', 'B'),
-('Marrocos', 'B'),
-('França', 'C'),
-('Dinamarca', 'C'),
-('Austrália', 'C'),
-('Peru', 'C'),
-('Croácia', 'D'),
-('Nigéria', 'D'),
-('Islândia', 'D'),
-('Argentina', 'D'),
-('Brasil', 'E'),
-('Suiça', 'E'),
-('Sérvia', 'E'),
-('Costa Rica', 'E'),
-('México', 'F'),
-('Alemanha', 'F'),
-('Suécia', 'F'),
-('Coréia do SUl', 'F'),
-('Bélgica', 'G'),
-('Inglaterra', 'G'),
-('Panamá', 'G'),
-('Tunísia', 'G'),
-('Japão', 'H'),
-('Senegal', 'H'),
-('Polônia', 'H'),
-('Colômbia', 'H');
+('RUS', 'A', '2'),
+('URU', 'A', '1'),
+('EGI', 'A', '4'),
+('ARA', 'A', '3'),
+('ESP', 'B', '1'),
+('POR', 'B', '2'),
+('IRA', 'B', '3'),
+('MAR', 'B', '4'),
+('FRA', 'C', '1'),
+('DIN', 'C', '2'),
+('AUS', 'C', '4'),
+('PER', 'C', '3'),
+('CRO', 'D', '1'),
+('NIG', 'D', '3'),
+('ISL', 'D', '4'),
+('ARG', 'D', '2'),
+('BRA', 'E', '1'),
+('SUI', 'E', '2'),
+('SER', 'E', '3'),
+('COS', 'E', '4'),
+('MEX', 'F', '1'),
+('ALE', 'F', '2'),
+('SUE', 'F', '3'),
+('COR', 'F', '4'),
+('BEL', 'G', '2'),
+('ING', 'G', '1'),
+('PAN', 'G', '4'),
+('TUN', 'G', '3'),
+('JAP', 'H', '1'),
+('SEN', 'H', '2'),
+('POL', 'H', '4'),
+('COL', 'H', '3');
 
 #select * from tb_ligas;
