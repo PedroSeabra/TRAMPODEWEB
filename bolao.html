@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Ufsbola</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">  
+    <script type="text/javascript" src="script.js"></script>    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" height="50" width="100"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>        
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active-nav">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bolões</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Minha Conta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sair</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="conteudo">
+        <div class="row">
+            <div class= "col-md-6">
+                <table id="classificacao" class="table table-dark table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th colspan="5">CLASSIFICAÇÃO</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th >Usuário</th>
+                            <th data-toggle="tooltip" title="Pontos totais">PT</th>
+                            <th data-toggle="tooltip" title="Pontos por precisão de placar">PP</th>
+                            <th data-toggle="tooltip" title="Palpite campeão">PC</th>
+                        </tr>                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Toninho Cachaça</td>
+                            <td>15</td>
+                            <td>3</td>
+                            <td>Brasil</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Toninho Cachaça</td>
+                            <td>15</td>
+                            <td>3</td>
+                            <td>Brasil</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Toninho Cachaça</td>
+                            <td>15</td>
+                            <td>3</td>
+                            <td>Brasil</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Toninho Cachaça</td>
+                            <td>15</td>
+                            <td>3</td>
+                            <td>Brasil</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Toninho Cachaça</td>
+                            <td>15</td>
+                            <td>3</td>
+                            <td>Brasil</td>
+                        </tr>                    
+                        <tr>
+                            <td>6</td>
+                            <td>Toninho Cachaça</td>
+                            <td>15</td>
+                            <td>3</td>
+                            <td>Brasil</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Toninho Cachaça</td>
+                            <td>15</td>
+                            <td>3</td>
+                            <td>Brasil</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Toninho Cachaça</td>
+                            <td>15</td>
+                            <td>3</td>
+                            <td>Brasil</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Toninho Cachaça</td>
+                            <td>15</td>
+                            <td>3</td>
+                            <td>Brasil</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Toninho Cachaça</td>
+                            <td>15</td>
+                            <td>3</td>
+                            <td>Brasil</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4 ml-auto">
+                
+                <ul class="nav nav-pills nav-justified bg-dark" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" data-toggle="pill" href="#grupos">Grupos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" data-toggle="pill" href="#oitavas">Oitavas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" data-toggle="pill" href="#quartas">Quartas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" data-toggle="pill" href="#semis">Semi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" data-toggle="pill" href="#final">Final</a>
+                    </li>                    
+                </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content containersempadding">
+                    <div id="grupos" class="container tab-pane active">
+                        
+                        <div id="demo" class="carousel slide" data-ride="carousel" data-interval="false">
+
+                          <!-- Indicators -->
+                          <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                            <li data-target="#demo" data-slide-to="3"></li>
+                            <li data-target="#demo" data-slide-to="4"></li>            
+                            <li data-target="#demo" data-slide-to="5"></li>
+                            <li data-target="#demo" data-slide-to="6"></li>                      
+                            <li data-target="#demo" data-slide-to="7"></li>                       
+                            </ul>
+
+                          <!-- The slideshow -->
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <table class="table table-dark table-striped table-bordered table-hover proxJogos">
+                                    <thead><th colspan="5">GRUPO 1</th></thead>
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 1</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">QUI 14/06/2018 MOSCOU 12:00</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>RUS</span><img class="img-fluid float-right rounded-circle" src="img/paises/icone-rus.png" alt="Bandeira Russa" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>ARA</span><img class="img-fluid float-left rounded-circle" src="img/paises/icone-ara.png" alt="Bandeira saudita" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">SEX 15/06/2018 ECATERIMBURGO 09:00</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>EGI</span><img class="img-fluid float-right rounded-circle" src="img/paises/icone-egi.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>URU</span><img class="img-fluid float-left rounded-circle" src="img/paises/icone-uru.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 2</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time C</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time B</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 3</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time B</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time C</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos"></div></td>
+                                        </tr>                                
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="carousel-item">
+                                <table class="table table-dark table-striped table-bordered table-hover proxJogos">
+                                    <thead><th colspan="5" >GRUPO 2</th></thead>
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 1</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time B</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time C</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 2</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time C</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time B</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 3</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time B</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time C</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos"></div></td>
+                                        </tr>                                
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="carousel-item">
+                                <table class="table table-dark table-striped table-bordered table-hover proxJogos">
+                                    <thead><th colspan="5">GRUPO 3</th></thead>
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 1</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time B</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time C</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 2</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time C</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time B</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 3</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time B</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time C</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos"></div></td>
+                                        </tr>                                
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="carousel-item">
+                                <table class="table table-dark table-striped table-bordered table-hover proxJogos">
+                                    <thead><th colspan="5">GRUPO 4</th></thead>
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 1</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time B</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time C</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 2</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time C</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time B</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 3</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time B</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time C</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos"></div></td>
+                                        </tr>                                
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="carousel-item">
+                                <table class="table table-dark table-striped table-bordered table-hover proxJogos">
+                                    <thead><th colspan="5">GRUPO 6</th></thead>
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 1</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time B</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time C</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 2</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time C</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time B</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 3</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time B</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time C</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos"></div></td>
+                                        </tr>                                
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="carousel-item">
+                                <table class="table table-dark table-striped table-bordered table-hover proxJogos">
+                                    <thead><th colspan="5">GRUPO 7</th></thead>
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 1</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time B</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time C</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 2</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time C</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time B</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 3</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time B</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time C</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos"></div></td>
+                                        </tr>                                
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="carousel-item">
+                                <table class="table table-dark table-striped table-bordered table-hover proxJogos">
+                                    <thead><th colspan="5">GRUPO 8</th></thead>
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 1</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time B</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time C</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 2</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time C</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time B</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Rodada 3</div></th>
+                                        </tr>                                
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div><span>Time A</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time D</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Time B</span><img class="img-fluid float-right rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Time C</span><img class="img-fluid float-left rounded-circle" src="img/icone-br.png" alt="país" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos"></div></td>
+                                        </tr>                                
+                                    </tbody>
+                                </table>
+                            </div>
+
+                          </div>
+
+                          <!-- Left and right controls -->
+                          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </a>
+                          <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </a>
+                        </div>                        
+                    </div>
+                    <div id="oitavas" class="container tab-pane fade">
+                                <table class="table table-dark table-striped table-bordered table-hover proxJogos">
+                                    <thead><th colspan="5">CONFRONTOS</th></thead>
+                                    <tbody>                                
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Oitavas 1</div></th>
+                                        </tr>                                                                        
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Sab 30/06/2018 Sochi 15:00</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>URU</span><img class="img-fluid float-right rounded-circle" src="img/paises/icone-uru.png" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>POR</span><img class="img-fluid float-left rounded-circle" src="img/paises/icone-por.png" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Oitavas 2</div></th>
+                                        </tr>                                                                        
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>FRA</span><img class="img-fluid float-right rounded-circle" src="img/paises/icone-fra.png" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>ARG</span><img class="img-fluid float-left rounded-circle" src="img/paises/icone-arg.png" width="20" height="20"></div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Oitavas 3</div></th>
+                                        </tr>                                                                        
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div><span>1º E</span><img class="img-fluid float-right rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>2º F</span><img class="img-fluid float-left rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Oitavas 4</div></th>
+                                        </tr>                                                                        
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>1º G</span><img class="img-fluid float-right rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>2º H</span><img class="img-fluid float-left rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Oitavas 5</div></th>
+                                        </tr>                                                                        
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dom 01/07/2018 Moscou 11:00</div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><div><span>ESP</span><img class="img-fluid float-right rounded-circle" src="img/paises/icone-esp.png" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>RUS</span><img class="img-fluid float-left rounded-circle" src="img/paises/icone-rus.png" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Oitavas 6</div></th>
+                                        </tr>                                                                        
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>CRO</span><img class="img-fluid float-right rounded-circle" src="img/paises/icone-cro.png" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>DIN</span><img class="img-fluid float-left rounded-circle" src="img/paises/icone-din.png" width="20" height="20"></div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Oitavas 7</div></th>
+                                        </tr>                                                                        
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>1º F</span><img class="img-fluid float-right rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>2º E</span><img class="img-fluid float-left rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Oitavas 8</div></th>
+                                        </tr>                                                                        
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>1º H</span><img class="img-fluid float-right rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>2º G</span><img class="img-fluid float-left rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                        </tr>                                           
+                                    </tbody>
+                                </table>
+                    </div>
+                    <div id="quartas" class="container tab-pane fade">
+                                <table class="table table-dark table-striped table-bordered table-hover proxJogos">
+                                    <thead><th colspan="5">CONFRONTOS</th></thead>
+                                    <tbody>                                
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Quartas 1</div></th>
+                                        </tr>                                                                        
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Oitavas 1</span><img class="img-fluid float-right rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Oitavas 2</span><img class="img-fluid float-left rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Quartas 2</div></th>
+                                        </tr>                                                                        
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Oitavas 3</span><img class="img-fluid float-right rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Oitavas 4</span><img class="img-fluid float-left rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                        </tr>                                                                
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Quartas 3</div></th>
+                                        </tr>                                                                        
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Oitavas 5</span><img class="img-fluid float-right rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Oitavas 6</span><img class="img-fluid float-left rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Quartas 4</div></th>
+                                        </tr>                                                                        
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Oitavas 7</span><img class="img-fluid float-right rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Oitavas 8</span><img class="img-fluid float-left rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                        </tr>                                           
+                                    </tbody>
+                                </table>
+                    </div>
+                    <div id="semis" class="container tab-pane fade">
+                                <table class="table table-dark table-striped table-bordered table-hover proxJogos">
+                                    <thead><th colspan="5">CONFRONTOS</th></thead>
+                                    <tbody>                                
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Semi-finais 1</div></th>
+                                        </tr>                                                                        
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Quartas 1</span><img class="img-fluid float-right rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Quartas 2</span><img class="img-fluid float-left rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Semi-finais 2</div></th>
+                                        </tr>                                                                        
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Quartas 3</span><img class="img-fluid float-right rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Quartas 4</span><img class="img-fluid float-left rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                        </tr>                                                                
+                                    </tbody>
+                                </table>
+                    </div>
+                    <div id="final" class="container tab-pane fade">
+                                <table class="table table-dark table-striped table-bordered table-hover proxJogos">
+                                    <thead><th colspan="5">CONFRONTOS</th></thead>
+                                    <tbody>                                
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Final</div></th>
+                                        </tr>                                                                        
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span>Semi 1</span><img class="img-fluid float-right rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span>Semi 2</span><img class="img-fluid float-left rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th colspan="5" class="smpadding"><div>Disputa do Terceiro lugar</div></th>
+                                        </tr>                                                                        
+                                        <tr>
+                                            <td colspan="5" class="smpadding"><div class="infoJogos">Dia DD/MM/AAAA Local HH:MM</div></td>
+                                        </tr>                                
+                                        <tr>
+                                            <td><div><span style="font-size: 14px;">Perd Semi 1 </span><img class="img-fluid float-right rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+                                            <td>?</td>
+                                            <td>X</td>
+                                            <td>?</td>
+                                            <td><div><span style="font-size: 14px;"> Perd Semi 2</span><img class="img-fluid float-left rounded-circle" src="img/icone-indefinido.png" width="20" height="20"></div></td>
+
+                                        </tr>                                                                
+                                    </tbody>
+                                </table>
+                    </div>                      
+                  </div>
+            </div>
+        </div>
+    </div>  
+    
+    <div class="content"> 
+        <footer>
+            <nav class="navbar navbar-expand-sm" style="background-color: #000000; min-height: 40px">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logoinvertido.png" height="60" width="120">
+                </a>
+                <h6><br>© Copyright 2018 - Todos os Direitos Reservados</h6>
+                 <form method="get" action="http://www.twitter.com/" class="ml-auto">    
+                    <button class="btn efeito efeito-2" type="submit" style="background-color: black">
+                            <span class="btn-text" style="color: white"><div class="image"><i class="fab fa-twitter"></i></div></span>
+                    </button>
+                </form>
+                <form method="get" action="http://www.facebook.com/">
+                    <button class="btn efeito efeito-2" type="submit" style="background-color: black">
+                        <span class="btn-text" style="color: white"><div  class="image"><i class="fab fa-facebook" ></i></div></span>
+                    </button>
+                </form>
+            </nav>    
+        </footer>
+    </div>    
+    
+</body>
+</html>
