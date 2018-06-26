@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     </head>
     <body>
+        
        <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logo.png" height="75" width="160" style="padding-left: 20px">
@@ -86,46 +87,44 @@
                                         <legend><h6>Para efetuar a criação, basta preencher as informações nos campos abaixo!</h6></legend>
                                         <div class="form-group">
                                             <label for="nomeLiga">Nome:</label>
-                                            <input type="text" class="form-control" name="nomeLiga" placeholder="Digite o nome da Liga...">
+                                            <input type="text" class="form-control" name="nomeLiga" id="nomeLiga" placeholder="Digite o nome da Liga...">
                                         </div>
                                         <div class="form-group">
                                             <label for="numLiga">N° de Participantes (max 100):</label>
-                                            <input type="text" class="form-control" name="numLiga" placeholder="Digite o n° de participantes...">
+                                            <input type="text" class="form-control" name="numLiga" id="numLiga" placeholder="Digite o n° de participantes...">
                                         </div>
                                         <div class="form-group">
                                             <label for="descLiga">Descrição:</label>
-                                            <textarea rows="5" type="text" class="form-control" name="descLiga" placeholder="Digite a descrição da Liga..."></textarea>
+                                            <textarea rows="5" type="text" class="form-control" name="descLiga" id="descLiga" placeholder="Digite a descrição da Liga..."></textarea>
                                         </div>
                                         <div class="form-group">
                                             <label for="descLiga">Pontuação acertando placar exato:</label>
-                                            <input type="text" class="form-control" name="pontuacao1" placeholder="Deixar em branco para 30 pontos...">
+                                            <input type="text" class="form-control" name="pontuacao1" id="pontuacao1" placeholder="Deixar em branco para 30 pontos...">
                                         </div>
                                         <div class="form-group">
                                             <label for="descLiga">Pontuação acertando vencedor e n° de gols de um dos times:</label>
-                                            <input type="text" class="form-control" name="pontuacao2" placeholder="Deixar em branco para 20 pontos...">
+                                            <input type="text" class="form-control" name="pontuacao2" id="pontuacao2" placeholder="Deixar em branco para 20 pontos...">
                                         </div>
                                         <div class="form-group">
                                             <label for="descLiga">Pontuação acertando apenas o vencedor ou empate:</label>
-                                            <input type="text" class="form-control" name="pontuacao3" placeholder="Deixar em branco para 15 pontos...">
+                                            <input type="text" class="form-control" name="pontuacao3" id="pontuacao3" placeholder="Deixar em branco para 15 pontos...">
                                         </div>
                                         <div class="form-group">
                                             <label for="descLiga">Pontuação acertando apenas o n° de gols de um dos times:</label>
-                                            <input type="text" class="form-control" name="pontuacao4" placeholder="Deixar em branco para 5 pontos...">
+                                            <input type="text" class="form-control" name="pontuacao4" id="pontuacao4" placeholder="Deixar em branco para 5 pontos...">
                                         </div>
                                          <label for="privacidadeLiga">Privacidade da Liga:</label>
                                         <br>
                                         <label class="radio-inline"><input type="radio" name="optradio">PRIVADA</label>
                                         <label class="radio-inline"><input type="radio" name="optradio">PÚBLICA</label>
-                                        
+                                        <br><br>
+                                        <input type="submit" class="btn btn-warning efeito efeito-1 m-auto" data-dismiss="modal" style="width: 150px" value="CRIAR" name="btn_criar" id="btn_criar">
+                                
                                     </fieldset>
                                 </form>
                              </div>
 
-                              <!-- RODAPÉ DO MODAL -->
-                                <div class="modal-footer">
-                                    <input type="submit" class="btn btn-warning efeito efeito-1 m-auto" data-dismiss="modal" style="width: 150px" value="CRIAR" name="criar">
-                                </div>
-
+                              
                             </div>
                           </div>
                         </div>
